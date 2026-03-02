@@ -3,11 +3,11 @@ import FAQItem from "@/components/FAQItem";
 import styles from "./page.module.css";
 
 const faqs = [
-    { q: "Is this guidance official from BBIT management?", a: "No, we are an independent team of BBIT senior mentors and alumni providing free guidance to help students make informed decisions. We work with students on rank counselling, scholarship eligibility, and branch choices." },
-    { q: "Are there any fees for the guidance process?", a: "No, our admission guidance is strictly free of charge. We do not charge students for any information or counselling support related to BBIT." },
-    { q: "How long does it take to get a callback?", a: "Once you submit the enquire form, a senior mentor typically calls you within 12 to 24 hours to discuss your rank and course preferences." },
-    { q: "Can I get help with the WBJEE/JEE Main counselling process?", a: "Yes, our mentors provide detailed guidance on the counselling process, rank-wise choices, and branch preferences at BBIT." },
-    { q: "Is a campus visit possible before admission?", a: "Absolutely. We encourage and even coordinate campus visits so you can see the labs, hostels, and meet the faculty before making a final decision." },
+    { question: "Is this guidance official from BBIT management?", answer: "No, we are an independent team of BBIT senior mentors and alumni providing free guidance to help students make informed decisions. We work with students on rank counselling, scholarship eligibility, and branch choices." },
+    { question: "Are there any fees for the guidance process?", answer: "No, our admission guidance is strictly free of charge. We do not charge students for any information or counselling support related to BBIT." },
+    { question: "How long does it take to get a callback?", answer: "Once you submit the enquire form, a senior mentor typically calls you within 12 to 24 hours to discuss your rank and course preferences." },
+    { question: "Can I get help with the WBJEE/JEE Main counselling process?", answer: "Yes, our mentors provide detailed guidance on the counselling process, rank-wise choices, and branch preferences at BBIT." },
+    { question: "Is a campus visit possible before admission?", answer: "Absolutely. We encourage and even coordinate campus visits so you can see the labs, hostels, and meet the faculty before making a final decision." },
 ];
 
 export default function ApplyPage() {
@@ -107,7 +107,7 @@ export default function ApplyPage() {
                         <p className="section-desc">Quick answers to clear your doubts about our guidance portal.</p>
                     </div>
                     <div className={styles.faqWrap}>
-                        {faqs.map(f => <FAQItem key={f.q} {...f} />)}
+                        {faqs.map(f => <FAQItem key={f.question} {...f} />)}
                     </div>
                 </div>
             </section>
