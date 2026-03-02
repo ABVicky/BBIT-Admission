@@ -1,0 +1,147 @@
+.hero {
+    background: var(--dark);
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.heroContent {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: clamp(2rem, 5vw, 3.25rem);
+    font-weight: 800;
+    color: #fff;
+    margin: 1.5rem 0;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 1.8;
+}
+
+/* Card Banner */
+.cardBanner {
+    margin-top: -3rem;
+    position: relative;
+    z-index: 2;
+}
+
+.cardBox {
+    background: linear-gradient(135deg, var(--primary) 0%, #0d2a5c 100%);
+    border-radius: var(--r-xl);
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    color: #fff;
+    border-bottom: 4px solid var(--gold);
+    box-shadow: var(--shadow-xl);
+}
+
+.cardTitle {
+    font-family: var(--font-heading);
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--gold-light);
+    margin-bottom: 0.75rem;
+}
+
+.cardDesc {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 500px;
+    margin-bottom: 1.5rem;
+}
+
+.cardBadges {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.cardBadges span {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.08);
+    padding: 0.4rem 0.85rem;
+    border-radius: var(--r-full);
+}
+
+/* Scholarship Cards */
+.scholCard {
+    background: var(--white);
+    border: 1px solid var(--gray-100);
+    border-radius: var(--r-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.25s;
+}
+
+.scholCard:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.scholHead {
+    background: var(--primary);
+    padding: 1.5rem;
+    color: #fff;
+    text-align: center;
+}
+
+.scholName {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.scholAmount {
+    font-size: 0.85rem;
+    color: var(--gold-light);
+    font-weight: 700;
+    margin-top: 0.25rem;
+}
+
+.scholBody {
+    padding: 1.75rem;
+}
+
+.scholFull {
+    font-weight: 700;
+    color: var(--gray-900);
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.scholElig {
+    background: var(--gray-50);
+    border-left: 3px solid var(--gold);
+    padding: 0.75rem;
+    font-size: 0.82rem;
+    color: var(--gray-600);
+    margin-bottom: 1rem;
+}
+
+.scholDesc {
+    font-size: 0.88rem;
+    color: var(--gray-400);
+    line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+    .cardBox {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+        padding: 2rem;
+    }
+
+    .cardBadges {
+        justify-content: center;
+    }
+}

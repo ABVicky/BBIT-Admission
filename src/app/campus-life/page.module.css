@@ -1,0 +1,195 @@
+.hero {
+    background: var(--dark);
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.heroContent {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: clamp(2rem, 5vw, 3.25rem);
+    font-weight: 800;
+    color: #fff;
+    margin: 1.5rem 0;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 1.8;
+}
+
+/* Amenity Cards */
+.amenCard {
+    background: var(--white);
+    border: 1px solid var(--gray-100);
+    border-radius: var(--r-lg);
+    padding: 2.25rem;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.2s ease;
+}
+
+.amenCard:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--primary-glow);
+}
+
+.amenIcon {
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.amenTitle {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 0.75rem;
+    font-family: var(--font-heading);
+}
+
+.amenDesc {
+    font-size: 0.88rem;
+    color: var(--gray-500);
+    line-height: 1.65;
+}
+
+/* Fest Section */
+.festSection {
+    background: linear-gradient(135deg, #0b0015 0%, #1a0033 100%);
+    padding: 6rem 0;
+    color: #fff;
+}
+
+.festLayout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.festBadge {
+    background: rgba(201, 162, 39, 0.15);
+    border: 1px solid rgba(201, 162, 39, 0.4);
+    color: var(--gold-light);
+    padding: 0.35rem 1rem;
+    border-radius: var(--r-full);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+}
+
+.festTitle {
+    font-family: var(--font-display);
+    font-size: 5rem;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+    background: linear-gradient(135deg, var(--gold), var(--gold-light), #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1;
+    margin-bottom: 1.5rem;
+}
+
+.festDesc {
+    font-size: 1.05rem;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.festFeatures {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.festFeature {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.6rem 1rem;
+    border-radius: var(--r-sm);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.festRight {}
+
+.festCard {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: var(--r-xl);
+    padding: 2rem;
+}
+
+.festCardTitle {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--gold-light);
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.performerList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+}
+
+.performerItem {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.performerName {
+    font-weight: 700;
+    font-family: var(--font-heading);
+}
+
+.performerYear {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/* Life Grid */
+.lifeGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.lifeList {
+    list-style: none;
+    margin: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.lifeList li {
+    font-weight: 600;
+    color: var(--gray-600);
+}
+
+@media (max-width: 1024px) {
+
+    .festLayout,
+    .lifeGrid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .festTitle {
+        font-size: 4rem;
+    }
+}

@@ -1,0 +1,89 @@
+.hero {
+    background: var(--dark);
+    padding: 4rem 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: -150px;
+    left: -150px;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(26, 58, 110, 0.15), transparent 70%);
+    z-index: 0;
+}
+
+.heroContent {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 800;
+    color: #fff;
+    margin: 1.25rem 0;
+    line-height: 1.1;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 1.75;
+}
+
+/* Eligibility Card */
+.eligCard {
+    background: var(--white);
+    border: 1px solid var(--gray-100);
+    border-radius: var(--r-lg);
+    padding: 2.5rem;
+    display: flex;
+    gap: 1.5rem;
+    box-shadow: var(--shadow-md);
+    align-items: flex-start;
+}
+
+.eligIcon {
+    width: 56px;
+    height: 56px;
+    background: rgba(26, 58, 110, 0.08);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.eligContent {
+    flex: 1;
+}
+
+.eligTitle {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 0.75rem;
+    font-family: var(--font-heading);
+}
+
+.eligText {
+    font-size: 0.95rem;
+    color: var(--gray-500);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .eligCard {
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+}

@@ -1,0 +1,342 @@
+/* ========================
+   TOP INFO BAR
+======================== */
+.topBar {
+    background: var(--primary);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.72rem;
+    padding: 0.55rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 101;
+}
+
+.topBarInner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.topBarInner strong {
+    color: var(--gold-light);
+}
+
+.topBarSep {
+    color: rgba(255, 255, 255, 0.25);
+}
+
+/* ========================
+   MAIN NAVBAR
+======================== */
+.navbar {
+    position: fixed;
+    top: 34px;
+    /* below topBar */
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.97);
+    border-bottom: 1px solid var(--gray-100);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.scrolled {
+    top: 0;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.navInner {
+    display: flex;
+    align-items: center;
+    height: 66px;
+    gap: 2rem;
+}
+
+/* ========================
+   LOGO
+======================== */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.logoImgWrapper {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--gray-100);
+    overflow: hidden;
+    flex-shrink: 0;
+    transition: all 0.2s ease;
+}
+
+@media (max-width: 768px) {
+    .logoImgWrapper {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+.logoImg {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.logoText {
+    display: flex;
+    flex-direction: column;
+}
+
+.logoPrimary {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 900;
+    color: var(--primary);
+    letter-spacing: 0.04em;
+    line-height: 1;
+}
+
+.logoTagline {
+    font-size: 0.6rem;
+    color: var(--gray-400);
+    font-weight: 500;
+    margin-top: 3px;
+    white-space: nowrap;
+}
+
+/* ========================
+   DESKTOP NAV LINKS
+======================== */
+.links {
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+    flex: 1;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.link {
+    display: block;
+    color: var(--gray-500);
+    font-size: 0.84rem;
+    font-weight: 600;
+    font-family: var(--font-heading);
+    padding: 0.5rem 0.9rem;
+    border-radius: var(--r-sm);
+    text-decoration: none;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+    letter-spacing: 0.01em;
+}
+
+.link:hover {
+    color: var(--primary);
+    background: rgba(26, 58, 110, 0.06);
+}
+
+/* ========================
+   RIGHT CTAS
+======================== */
+.ctas {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-shrink: 0;
+}
+
+.waBtn {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    background: rgba(37, 211, 102, 0.1);
+    color: #15803d;
+    padding: 0.55rem 1rem;
+    border-radius: var(--r-full);
+    font-size: 0.8rem;
+    font-weight: 700;
+    font-family: var(--font-heading);
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border: 1px solid rgba(37, 211, 102, 0.3);
+}
+
+.waBtn:hover {
+    background: var(--whatsapp);
+    color: #fff;
+    border-color: var(--whatsapp);
+}
+
+.applyBtn {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    background: linear-gradient(135deg, var(--gold), var(--gold-light));
+    color: #1a1100;
+    padding: 0.6rem 1.25rem;
+    border-radius: var(--r-full);
+    font-size: 0.82rem;
+    font-weight: 800;
+    font-family: var(--font-heading);
+    text-decoration: none;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 14px rgba(201, 162, 39, 0.35);
+}
+
+.applyBtn:hover {
+    transform: translateY(-1.5px);
+    box-shadow: 0 6px 20px rgba(201, 162, 39, 0.5);
+    filter: brightness(1.05);
+}
+
+.applyBtnFull,
+.waBtnFull {
+    justify-content: center;
+    width: 100%;
+}
+
+/* ========================
+   HAMBURGER
+======================== */
+.ham {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0.4rem;
+    margin-left: auto;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hamBar {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--primary);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.b1 {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.b2 {
+    opacity: 0;
+}
+
+.b3 {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ========================
+   MOBILE DRAWER
+======================== */
+.drawer {
+    position: fixed;
+    inset: 0;
+    background: rgba(6, 13, 31, 0.7);
+    z-index: 99;
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.drawerPanel {
+    background: var(--dark);
+    width: min(320px, 85vw);
+    height: 100%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    overflow-y: auto;
+    padding-top: 5rem;
+}
+
+.drawerLogo {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.drawerLinks {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.drawerLink {
+    display: block;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-family: var(--font-heading);
+    padding: 0.75rem 1rem;
+    border-radius: var(--r-sm);
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.drawerLink:hover {
+    background: rgba(255, 255, 255, 0.07);
+    color: #fff;
+}
+
+.drawerCtaGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: auto;
+}
+
+/* ========================
+   RESPONSIVE
+======================== */
+@media (max-width: 1100px) {
+    .links {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .topBar {
+        display: none;
+    }
+
+    .navbar {
+        top: 0;
+    }
+
+    .ctas {
+        display: none;
+    }
+
+    .ham {
+        display: flex;
+    }
+}

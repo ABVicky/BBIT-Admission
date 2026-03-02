@@ -1,0 +1,704 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+/* ===========================
+   CSS DESIGN TOKENS
+=========================== */
+:root {
+  /* Brand Identity — Deep Navy + Gold */
+  --primary: #1a3a6e;
+  /* deep navy */
+  --primary-mid: #1e4d9e;
+  --primary-light: #2563eb;
+  --primary-glow: rgba(30, 77, 158, 0.25);
+
+  --gold: #c9a227;
+  --gold-light: #f0c040;
+  --gold-pale: #fef3c7;
+
+  --accent: #e63946;
+  /* vibrant red-coral CTA */
+  --accent-hover: #c1121f;
+
+  --whatsapp: #25d366;
+  --whatsapp-dark: #1da853;
+
+  /* Neutrals */
+  --white: #ffffff;
+  --off-white: #f8f9fc;
+  --gray-50: #f1f5f9;
+  --gray-100: #e2e8f0;
+  --gray-200: #cbd5e1;
+  --gray-300: #94a3b8;
+  --gray-400: #64748b;
+  --gray-500: #475569;
+  --gray-700: #1e293b;
+  --gray-900: #0f172a;
+
+  /* Dark palette */
+  --dark: #060d1f;
+  --dark-card: #0d1b38;
+  --dark-border: rgba(255, 255, 255, 0.08);
+
+  /* Fonts */
+  --font-heading: 'Plus Jakarta Sans', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-display: 'Space Grotesk', sans-serif;
+
+  /* Layout */
+  --max-w: 1280px;
+  --section-py: 5.5rem;
+  --nav-h: 72px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.12);
+  --shadow-xl: 0 24px 60px rgba(0, 0, 0, 0.16);
+  --shadow-gold: 0 8px 32px rgba(201, 162, 39, 0.25);
+  --shadow-blue: 0 8px 32px rgba(26, 58, 110, 0.3);
+
+  /* Radius */
+  --r-sm: 8px;
+  --r-md: 14px;
+  --r-lg: 20px;
+  --r-xl: 28px;
+  --r-full: 9999px;
+
+  /* Transitions */
+  --t-fast: 0.15s ease;
+  --t-base: 0.25s ease;
+  --t-slow: 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ===========================
+   RESET
+=========================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--gray-700);
+  background: var(--white);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  line-height: 1.2;
+}
+
+/* ===========================
+   LAYOUT
+=========================== */
+.container {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section {
+  padding: var(--section-py) 0;
+}
+
+.section--light {
+  background: var(--off-white);
+}
+
+.section--dark {
+  background: var(--dark);
+  color: #fff;
+}
+
+.section--navy {
+  background: var(--primary);
+  color: #fff;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+
+/* ===========================
+   TYPOGRAPHY UTILITIES
+=========================== */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.9rem;
+  border-radius: var(--r-full);
+}
+
+.badge--gold {
+  background: var(--gold-pale);
+  color: #92400e;
+  border: 1px solid rgba(201, 162, 39, 0.3);
+}
+
+.badge--blue {
+  background: rgba(26, 58, 110, 0.08);
+  color: var(--primary);
+  border: 1px solid rgba(26, 58, 110, 0.15);
+}
+
+.badge--white {
+  background: rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.badge--red {
+  background: rgba(230, 57, 70, 0.1);
+  color: var(--accent);
+  border: 1px solid rgba(230, 57, 70, 0.2);
+}
+
+.section-eyebrow {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--primary-light);
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.section-eyebrow--gold {
+  color: var(--gold);
+}
+
+.section-eyebrow--white {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.65rem, 3.2vw, 2.5rem);
+  font-weight: 800;
+  color: var(--gray-900);
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.section-title--white {
+  color: #fff;
+}
+
+.section-title--gold {
+  color: var(--gold-light);
+}
+
+.section-desc {
+  font-size: 1rem;
+  color: var(--gray-400);
+  line-height: 1.75;
+  max-width: 580px;
+}
+
+.section-desc--white {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-center .section-desc {
+  margin: 0 auto;
+}
+
+.section-hd {
+  margin-bottom: 3.5rem;
+}
+
+/* ===========================
+   DECORATIVE DIVIDER
+=========================== */
+.gold-line {
+  display: block;
+  width: 48px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--gold), var(--gold-light));
+  border-radius: 4px;
+  margin-bottom: 1.25rem;
+}
+
+.gold-line--center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.9rem;
+  border-radius: var(--r-full);
+  font-size: 0.88rem;
+  font-weight: 700;
+  font-family: var(--font-heading);
+  transition: all var(--t-base);
+  white-space: nowrap;
+  letter-spacing: 0.01em;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.btn svg {
+  flex-shrink: 0;
+}
+
+/* Primary — Navy */
+.btn-primary {
+  background: var(--primary);
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(26, 58, 110, 0.35);
+}
+
+.btn-primary:hover {
+  background: var(--primary-mid);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(26, 58, 110, 0.45);
+}
+
+/* Gold */
+.btn-gold {
+  background: linear-gradient(135deg, var(--gold), var(--gold-light));
+  color: #1a1100;
+  box-shadow: var(--shadow-gold);
+}
+
+.btn-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(201, 162, 39, 0.4);
+  filter: brightness(1.05);
+}
+
+/* Accent red */
+.btn-accent {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(230, 57, 70, 0.35);
+}
+
+.btn-accent:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(230, 57, 70, 0.45);
+}
+
+/* WhatsApp */
+.btn-whatsapp {
+  background: var(--whatsapp);
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3);
+}
+
+.btn-whatsapp:hover {
+  background: var(--whatsapp-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
+}
+
+/* Outline white */
+.btn-outline-white {
+  background: transparent;
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.45);
+}
+
+.btn-outline-white:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: white;
+  transform: translateY(-2px);
+}
+
+/* Outline navy */
+.btn-outline-navy {
+  background: transparent;
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-outline-navy:hover {
+  background: var(--primary);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Sizes */
+.btn-xl {
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
+}
+
+.btn-lg {
+  padding: 0.9rem 2.1rem;
+  font-size: 0.92rem;
+}
+
+.btn-sm {
+  padding: 0.55rem 1.25rem;
+  font-size: 0.8rem;
+}
+
+/* ===========================
+   CARDS
+=========================== */
+.card {
+  background: var(--white);
+  border-radius: var(--r-lg);
+  border: 1px solid var(--gray-100);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  transition: all var(--t-base);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--gray-200);
+}
+
+/* ===========================
+   IMAGE PLACEHOLDERS
+=========================== */
+.img-ph {
+  background: linear-gradient(135deg, #e8edf5 0%, #dde4f0 100%);
+  border: 2px dashed var(--gray-200);
+  border-radius: var(--r-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  text-align: center;
+  padding: 2rem;
+  color: var(--gray-300);
+  font-size: 0.8rem;
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+}
+
+.img-ph::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.3) 50%, transparent 70%);
+  animation: shimmer-ph 2.5s infinite;
+}
+
+@keyframes shimmer-ph {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.img-ph .ph-icon {
+  font-size: 2.25rem;
+}
+
+.img-ph .ph-label {
+  color: var(--gray-400);
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+}
+
+.img-ph .ph-hint {
+  color: var(--gray-300);
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+
+/* DARK variant of placeholder */
+.img-ph--dark {
+  background: linear-gradient(135deg, #0d1b38 0%, #142040 100%);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.img-ph--dark .ph-label {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.img-ph--dark .ph-hint {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* ===========================
+   STAT CHIPS
+=========================== */
+.stat-chip {
+  text-align: center;
+}
+
+.stat-chip__num {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+}
+
+.stat-chip__label {
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.55);
+  margin-top: 0.3rem;
+}
+
+/* ===========================
+   FLOATING WHATSAPP
+=========================== */
+@keyframes wa-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.55);
+  }
+
+  70% {
+    box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+.wa-float {
+  position: fixed;
+  bottom: 1.75rem;
+  right: 1.75rem;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  background: var(--whatsapp);
+  color: #fff;
+  padding: 0.8rem 1.3rem;
+  border-radius: var(--r-full);
+  font-weight: 700;
+  font-size: 0.85rem;
+  font-family: var(--font-heading);
+  animation: wa-pulse 2.5s infinite;
+  transition: all var(--t-base);
+  box-shadow: 0 6px 24px rgba(37, 211, 102, 0.4);
+}
+
+.wa-float:hover {
+  background: var(--whatsapp-dark);
+  transform: scale(1.06);
+}
+
+.wa-float svg {
+  width: 22px;
+  height: 22px;
+}
+
+.wa-float-text {
+  display: none;
+}
+
+@media (min-width: 480px) {
+  .wa-float-text {
+    display: inline;
+  }
+}
+
+/* ===========================
+   ANIMATIONS
+=========================== */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes glow-ring {
+
+  0%,
+  100% {
+    opacity: 0.6;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.anim-up {
+  animation: fadeUp 0.65s ease both;
+}
+
+.anim-up-1 {
+  animation: fadeUp 0.65s 0.1s ease both;
+}
+
+.anim-up-2 {
+  animation: fadeUp 0.65s 0.2s ease both;
+}
+
+.anim-up-3 {
+  animation: fadeUp 0.65s 0.3s ease both;
+}
+
+.anim-up-4 {
+  animation: fadeUp 0.65s 0.4s ease both;
+}
+
+/* ===========================
+   SCROLLBAR
+=========================== */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--gray-50);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gray-200);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+::selection {
+  background: var(--primary);
+  color: #fff;
+}
+
+:focus-visible {
+  outline: 2px solid var(--primary-light);
+  outline-offset: 3px;
+}
+
+/* ===========================
+   RESPONSIVE HELPERS
+=========================== */
+@media (max-width: 768px) {
+  :root {
+    --section-py: 4rem;
+  }
+
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --section-py: 3rem;
+  }
+}

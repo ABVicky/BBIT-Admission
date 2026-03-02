@@ -1,0 +1,156 @@
+.hero {
+    background: var(--dark);
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.heroContent {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: clamp(2rem, 5vw, 3.25rem);
+    font-weight: 900;
+    color: #fff;
+    margin: 1.5rem 0;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 1.8;
+}
+
+/* Stats Strip */
+.statsStrip {
+    background: var(--primary);
+    padding: 2rem 0;
+    border-bottom: 3px solid var(--gold);
+}
+
+.statsRow {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.statItem {
+    text-align: center;
+    flex: 1;
+    min-width: 120px;
+}
+
+.statNum {
+    font-family: var(--font-display);
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--gold-light);
+    line-height: 1;
+}
+
+.statLabel {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.55);
+    margin-top: 0.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Branch Grid */
+.branchGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+}
+
+.branchCard {
+    background: var(--white);
+    border: 1px solid var(--gray-100);
+    border-radius: var(--r-lg);
+    padding: 1.75rem;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.2s ease;
+}
+
+.branchCard:hover {
+    transform: translateY(-4px);
+}
+
+.branchTitle {
+    font-size: 0.95rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 1.25rem;
+}
+
+.progressBar {
+    height: 8px;
+    background: var(--gray-100);
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+
+.progressFill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary), var(--primary-light));
+    border-radius: 4px;
+}
+
+.branchMeta {
+    display: flex;
+    justify-content: space-between;
+}
+
+.metaBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.metaLabel {
+    font-size: 0.65rem;
+    color: var(--gray-400);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.metaVal {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--gray-900);
+    font-family: var(--font-display);
+}
+
+/* Recruiter Grid */
+.recruiterGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.recruiterChip {
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    padding: 0.6rem 1.25rem;
+    border-radius: var(--r-full);
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--gray-600);
+    transition: all 0.2s ease;
+}
+
+.recruiterChip:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+    background: rgba(26, 58, 110, 0.05);
+}
+
+@media (max-width: 640px) {
+    .statsRow {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

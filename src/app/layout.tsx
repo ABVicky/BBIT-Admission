@@ -1,0 +1,97 @@
+import type { Metadata } from "next";
+import "./globals.css";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://bbitadmission.in"),
+  title: {
+    default: "BBIT Admission Guidance 2026 | Budge Budge Institute of Technology",
+    template: "%s | BBIT Admission Guidance",
+  },
+  description:
+    "Expert admission guidance for Budge Budge Institute of Technology (BBIT), Kolkata. Get counselling on courses, placements, scholarships, and campus life from a BBIT senior mentor.",
+  keywords: [
+    "BBIT admission 2026",
+    "Budge Budge Institute of Technology",
+    "BBIT courses",
+    "BBIT placements",
+    "engineering admission Kolkata",
+    "BBIT guidance",
+    "BBIT counselling",
+    "WB JEE admission",
+    "BBIT scholarship",
+  ],
+  authors: [{ name: "BBIT Admission Guidance" }],
+  creator: "BBIT Admission Guidance",
+  openGraph: {
+    type: "website",
+    locale: "en_IN",
+    url: "https://bbitadmission.in",
+    siteName: "BBIT Admission Guidance",
+    title: "BBIT Admission Guidance 2026 | Expert Counselling",
+    description:
+      "Navigate your BBIT admission with expert guidance. Courses, placements, scholarships & campus life — all explained by a senior mentor.",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "BBIT Admission Guidance 2026",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "BBIT Admission Guidance 2026",
+    description: "Expert admission counselling for Budge Budge Institute of Technology, Kolkata.",
+    images: ["/og-image.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  verification: {
+    google: "your-google-verification-code",
+  },
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+          rel="stylesheet"
+        />
+        <meta name="theme-color" content="#1a3a6e" />
+        <link rel="icon" href="/favicon.ico" />
+        <style>{`
+          body { background: #f8f9fc; }
+          main { padding-top: 100px; }
+          @media (max-width: 768px) { main { padding-top: 66px; } }
+        `}</style>
+      </head>
+      <body>
+        <Navbar />
+        <main>{children}</main>
+        <Footer />
+        <WhatsAppFloat />
+      </body>
+    </html>
+  );
+}

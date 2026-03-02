@@ -1,0 +1,182 @@
+.hero {
+    background: var(--dark);
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.heroContent {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: clamp(2rem, 5vw, 3.25rem);
+    font-weight: 800;
+    color: #fff;
+    margin: 1.5rem 0;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 1.8;
+}
+
+.applyGrid {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 3rem;
+    align-items: flex-start;
+}
+
+.formCard {
+    background: var(--white);
+    border: 1px solid var(--gray-100);
+    border-radius: var(--r-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+}
+
+.formHeader {
+    padding: 2rem;
+    background: var(--gray-50);
+    border-bottom: 2px solid var(--gray-100);
+}
+
+.formTitle {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 0.4rem;
+}
+
+.formSubtitle {
+    font-size: 0.9rem;
+    color: var(--gray-400);
+}
+
+.formAlt {
+    padding: 2rem;
+    text-align: center;
+    background: var(--gray-50);
+    border-top: 2px solid var(--gray-100);
+}
+
+.formAlt p {
+    font-size: 0.85rem;
+    color: var(--gray-500);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.btn-full {
+    width: 100%;
+    justify-content: center;
+}
+
+/* Info Column */
+.infoCol {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.pointsCard {
+    background: var(--primary);
+    color: #fff;
+    padding: 2rem;
+    border-radius: var(--r-xl);
+    box-shadow: var(--shadow-md);
+}
+
+.cardHeader {
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--gold-light);
+    margin-bottom: 1.5rem;
+}
+
+.pointsList {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.point {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.pointNum {
+    font-family: var(--font-display);
+    font-weight: 700;
+    color: var(--gold-light);
+    font-size: 0.8rem;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+}
+
+.point p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.helpCard {
+    background: var(--white);
+    border: 1px solid var(--gray-100);
+    padding: 2rem;
+    border-radius: var(--r-xl);
+}
+
+.helpItems {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.helpItem {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    color: var(--gray-500);
+}
+
+.helpItem strong {
+    color: var(--primary);
+}
+
+.trustedBox {
+    padding: 1.5rem;
+    background: rgba(201, 162, 39, 0.08);
+    border-radius: var(--r-lg);
+    border: 1px dashed var(--gold);
+}
+
+.trustTitle {
+    font-weight: 800;
+    color: #92400e;
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+}
+
+.trustedBox p {
+    font-size: 0.8rem;
+    color: #92400e;
+    opacity: 0.8;
+}
+
+.faqWrap {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    .applyGrid {
+        grid-template-columns: 1fr;
+    }
+}
