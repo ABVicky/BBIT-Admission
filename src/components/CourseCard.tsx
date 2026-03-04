@@ -35,10 +35,10 @@ export default function CourseCard({ icon, title, code, duration, seats, descrip
                 </div>
             </div>
             <div className={styles.actions}>
-                <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.btnPrimary}>
-                    Get Guidance
+                <a href="https://forms.gle/REFnBgCteRDtWrJd9" target="_blank" rel="noopener noreferrer" className={styles.btnPrimary}>
+                    Enquire Now
                 </a>
-                <a href="/courses" className={styles.btnOutline}>Details</a>
+                <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.btnOutline}>WhatsApp</a>
             </div>
         </div>
     );

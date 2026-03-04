@@ -38,9 +38,9 @@
 }
 
 .formHeader {
-    padding: 2rem;
+    padding: 1.5rem 2rem;
     background: var(--gray-50);
-    border-bottom: 2px solid var(--gray-100);
+    border-bottom: 1px solid var(--gray-100);
 }
 
 .formTitle {
@@ -55,11 +55,17 @@
     color: var(--gray-400);
 }
 
+.formContainer {
+    width: 100%;
+    background: #fff;
+    overflow-y: hidden;
+}
+
 .formAlt {
-    padding: 2rem;
+    padding: 1.5rem 2rem;
     text-align: center;
     background: var(--gray-50);
-    border-top: 2px solid var(--gray-100);
+    border-top: 1px solid var(--gray-100);
 }
 
 .formAlt p {

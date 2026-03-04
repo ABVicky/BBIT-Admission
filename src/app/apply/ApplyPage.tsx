@@ -39,18 +39,27 @@ export default function ApplyPage() {
                                     <p className={styles.formSubtitle}>Our mentor will connect with you within 24 hours</p>
                                 </div>
 
-                                <div className={styles.formPlaceholder}>
-                                    <div className="img-ph" style={{ height: "450px", border: "none" }}>
-                                        <span className="ph-icon" style={{ fontSize: "3rem" }}>📋</span>
-                                        <span className="ph-label">GOOGLE FORM EMBED HERE</span>
-                                        <span className="ph-hint">Replace this div with your &lt;iframe&gt; embed code</span>
-                                    </div>
+                                <div className={styles.formContainer}>
+                                    <iframe
+                                        src="https://docs.google.com/forms/d/e/1FAIpQLScDhwRo8pVXpsz0SuuKU0wpjuFhAtOH1EzzrRgQ6Cm-pv4QKg/viewform?embedded=true"
+                                        width="100%"
+                                        height="800"
+                                        frameBorder="0"
+                                        marginHeight={0}
+                                        marginWidth={0}
+                                        style={{ display: "block" }}
+                                    >
+                                        Loading…
+                                    </iframe>
                                 </div>
 
                                 <div className={styles.formAlt}>
-                                    <p>Prefer faster response?</p>
+                                    <p>Prefer a direct conversation?</p>
+                                    <a href="https://forms.gle/REFnBgCteRDtWrJd9" target="_blank" rel="noopener noreferrer" className="btn btn-gold btn-lg btn-full" style={{ marginBottom: "1rem" }}>
+                                        Open Form in New Tab
+                                    </a>
                                     <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="btn btn-whatsapp btn-lg btn-full">
-                                        Chat on WhatsApp Directly
+                                        Chat on WhatsApp
                                     </a>
                                 </div>
                             </div>
