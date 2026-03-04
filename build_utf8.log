@@ -1,0 +1,32 @@
+﻿
+> bbit-admission@0.1.0 build
+> next build
+
+Γû▓ Next.js 16.1.6 (Turbopack)
+
+  Creating an optimized production build ...
+Γ£ô Compiled successfully in 32.0s
+  Running TypeScript ...
+  Collecting page data using 3 workers ...
+  Generating static pages using 3 workers (0/12) ...
+  Generating static pages using 3 workers (3/12) 
+  Generating static pages using 3 workers (6/12) 
+  Generating static pages using 3 workers (9/12) 
+Γ£ô Generating static pages using 3 workers (12/12) in 523.3ms
+  Finalizing page optimization ...
+
+Route (app)
+Γöî Γùï /
+Γö£ Γùï /_not-found
+Γö£ Γùï /apply
+Γö£ Γùï /campus-life
+Γö£ Γùï /courses
+Γö£ Γùï /placements
+Γö£ Γùï /robots.txt
+Γö£ Γùï /scholarships
+Γö£ Γùï /sitemap.xml
+Γöö Γùï /training
+
+
+Γùï  (Static)  prerendered as static content
+

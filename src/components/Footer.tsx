@@ -36,7 +36,7 @@ export default function Footer() {
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                                 </svg>
                                 <span>
-                                    <strong>Disclaimer:</strong> This is an independent admission guidance platform, not the official BBIT website. We are not affiliated with BBIT management.
+                                    <strong>Disclaimer:</strong> This is an independent admission guidance platform. For official college information, visit <a href="https://www.bbit.edu.in/" target="_blank" rel="noopener noreferrer" style={{ color: "var(--gold)", textDecoration: "underline" }}>bbit.edu.in</a>. We are officially affiliated with BBIT for admission counselling and guidance support.
                                 </span>
                             </div>
                             <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.footerWa}>
@@ -130,7 +130,7 @@ export default function Footer() {
                 <div className="container">
                     <div className={styles.footerBottomRow}>
                         <p>© 2026 BBIT Admission Guidance. All rights reserved.</p>
-                        <p>Made with ❤️ by BBIT Senior Mentors for aspiring engineers</p>
+                        <p>Made with ❤️ by BBIT Senior Mentors | Built and maintained by <a href="https://wearelive04.com" target="_blank" rel="noopener noreferrer" style={{ color: "inherit", textDecoration: "underline" }}>wearelive04.com</a></p>
                     </div>
                 </div>
             </div>

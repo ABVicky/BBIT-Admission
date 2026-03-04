@@ -3,7 +3,7 @@ import FAQItem from "@/components/FAQItem";
 import styles from "./page.module.css";
 
 const faqs = [
-    { question: "Is this guidance official from BBIT management?", answer: "No, we are an independent team of BBIT senior mentors and alumni providing free guidance to help students make informed decisions. We work with students on rank counselling, scholarship eligibility, and branch choices." },
+    { question: "Is this guidance official from BBIT management?", answer: "Yes, we are officially affiliated with BBIT for admission counselling and guidance support. While this portal is independent, we work as official support partners to help students with rank counselling, scholarship eligibility, and branch choices. You can also visit the official college website at bbit.edu.in." },
     { question: "Are there any fees for the guidance process?", answer: "No, our admission guidance is strictly free of charge. We do not charge students for any information or counselling support related to BBIT." },
     { question: "How long does it take to get a callback?", answer: "Once you submit the enquire form, a senior mentor typically calls you within 12 to 24 hours to discuss your rank and course preferences." },
     { question: "Can I get help with the WBJEE/JEE Main counselling process?", answer: "Yes, our mentors provide detailed guidance on the counselling process, rank-wise choices, and branch preferences at BBIT." },
@@ -91,8 +91,8 @@ export default function ApplyPage() {
                             </div>
 
                             <div className={styles.trustedBox}>
-                                <div className={styles.trustTitle}>Independent & Focused</div>
-                                <p>Specifically designed to help students aiming for Budge Budge Institute of Technology (BBIT).</p>
+                                <div className={styles.trustTitle}>Official Counselling Support</div>
+                                <p>We are officially affiliated with BBIT to provide dedicated admission guidance and counselling support to aspiring students.</p>
                             </div>
                         </div>
                     </div>
