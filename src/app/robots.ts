@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
             userAgent: "*",
             allow: "/",
         },
-        sitemap: "https://bbitadmission.in/sitemap.xml",
+        sitemap: "https://studyatbbit.wearelive04.com/sitemap.xml",
     };
 }

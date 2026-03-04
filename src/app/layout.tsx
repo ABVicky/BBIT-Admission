@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://bbitadmission.in"),
+  metadataBase: new URL("https://studyatbbit.wearelive04.com"),
   title: {
     default: "BBIT Admission Guidance 2026 | Budge Budge Institute of Technology",
     template: "%s | BBIT Admission Guidance",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://bbitadmission.in",
+    url: "https://studyatbbit.wearelive04.com",
     siteName: "BBIT Admission Guidance",
     title: "BBIT Admission Guidance 2026 | Expert Counselling",
     description:

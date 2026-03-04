@@ -3,7 +3,7 @@ import type { MetadataRoute } from "next";
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = "https://bbitadmission.in";
+    const baseUrl = "https://studyatbbit.wearelive04.com";
     const pages = [
         { path: "/", priority: 1, changeFreq: "monthly" },
         { path: "/courses", priority: 0.9, changeFreq: "monthly" },
