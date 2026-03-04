@@ -49,10 +49,12 @@ const campusHighlights = [
 ];
 
 const magnusPerformers = [
-  { name: "Jubin Nautiyal", year: "2023", genre: "Bollywood" },
-  { name: "Arijit Singh", year: "2022", genre: "Bollywood" },
-  { name: "Neha Kakkar", year: "2021", genre: "Pop" },
-  { name: "Diljit Dosanjh", year: "2019", genre: "Punjabi / Pop" },
+  { name: "Yo Yo Honey Singh", genre: "Pop / Punjabi" },
+  { name: "Badshah", genre: "Hip-Hop / Rap" },
+  { name: "Guru Randhawa", genre: "Pop / Punjabi" },
+  { name: "Ayushman Khurrana", genre: "Bollywood / Pop" },
+  { name: "Vishal Shekhar", genre: "Bollywood / Music Director" },
+  { name: "Hardy Sandhu", genre: "Pop / Punjabi" },
 ];
 
 export default function HomePage() {
@@ -300,7 +302,7 @@ export default function HomePage() {
                     </div>
                     <div>
                       <div className={styles.magnusPerformerName}>{p.name}</div>
-                      <div className={styles.magnusPerformerInfo}>{p.genre} · MAGNUS {p.year}</div>
+                      <div className={styles.magnusPerformerInfo}>{p.genre}</div>
                     </div>
                   </div>
                 ))}
