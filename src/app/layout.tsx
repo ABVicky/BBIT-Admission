@@ -86,6 +86,8 @@ export default function RootLayout({
           main { padding-top: 100px; }
           @media (max-width: 768px) { main { padding-top: 66px; } }
         `}</style>
+      </head>
+      <body>
         <Script id="facebook-pixel" strategy="afterInteractive">
           {`
             !function(f,b,e,v,n,t,s)
@@ -109,8 +111,6 @@ export default function RootLayout({
             alt=""
           />
         </noscript>
-      </head>
-      <body>
         <Navbar />
         <main>{children}</main>
         <Footer />
