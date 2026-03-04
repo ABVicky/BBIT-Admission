@@ -130,7 +130,7 @@ export default function Footer() {
                 <div className="container">
                     <div className={styles.footerBottomRow}>
                         <p>© 2026 BBIT Admission Guidance. All rights reserved.</p>
-                        <p>Made with ❤️ by BBIT Senior Mentors | Built and maintained by <a href="https://wearelive04.com" target="_blank" rel="noopener noreferrer" style={{ color: "inherit", textDecoration: "underline" }}>wearelive04.com</a></p>
+                        <p>Made with ❤️ by BBIT Senior Mentors | Built and maintained by <a href="https://wearelive04.com" target="_blank" rel="noopener noreferrer" style={{ color: "#f59e0b", fontWeight: "700", textDecoration: "none" }}>wearelive04.com</a></p>
                     </div>
                 </div>
             </div>
