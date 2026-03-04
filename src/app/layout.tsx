@@ -86,8 +86,6 @@ export default function RootLayout({
           main { padding-top: 100px; }
           @media (max-width: 768px) { main { padding-top: 66px; } }
         `}</style>
-      </head>
-      <body>
         {/* Meta Pixel Code */}
         <Script id="facebook-pixel" strategy="afterInteractive">
           {`
@@ -103,6 +101,8 @@ export default function RootLayout({
             fbq('track', 'PageView');
           `}
         </Script>
+      </head>
+      <body>
         <noscript>
           <img
             height="1"
