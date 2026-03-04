@@ -88,6 +88,7 @@ export default function RootLayout({
         `}</style>
       </head>
       <body>
+        {/* Meta Pixel Code */}
         <Script id="facebook-pixel" strategy="afterInteractive">
           {`
             !function(f,b,e,v,n,t,s)
@@ -111,6 +112,7 @@ export default function RootLayout({
             alt=""
           />
         </noscript>
+        {/* End Meta Pixel Code */}
         <Navbar />
         <main>{children}</main>
         <Footer />
