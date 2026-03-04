@@ -15,6 +15,8 @@ const WA = "https://wa.me/919999999999?text=Hi%2C%20I%20want%20guidance%20for%20
 
 const courses = [
   { icon: "💻", title: "Computer Science & Engineering", code: "B.Tech CSE", duration: "4 Years", seats: "120", description: "Software development, AI/ML, data science, and modern computing. Highest demand branch with top placement records." },
+  { icon: "🤖", title: "CSE (Artificial Intelligence)", code: "B.Tech CSE-AI", duration: "4 Years", seats: "60", description: "Specialized study of neural networks, machine learning, and intelligent automation systems." },
+  { icon: "🔒", title: "CSE (Cyber Security)", code: "B.Tech CSE-CS", duration: "4 Years", seats: "60", description: "Focus on network protection, ethical hacking, digital forensics, and threat management." },
   { icon: "📡", title: "Information Technology", code: "B.Tech IT", duration: "4 Years", seats: "60", description: "Web technologies, networking, cloud computing, and IT management. Strong industry connections." },
   { icon: "📻", title: "Electronics & Comm. Engg.", code: "B.Tech ECE", duration: "4 Years", seats: "60", description: "Embedded systems, VLSI, communication systems, and IoT. Bridge between hardware and software." },
   { icon: "⚡", title: "Electrical Engineering", code: "B.Tech EE", duration: "4 Years", seats: "60", description: "Power systems, control engineering, and electrical machines. Gateway to PSUs." },
@@ -123,7 +125,7 @@ export default function HomePage() {
                 { num: "90%+", label: "Placement Rate" },
                 { num: "200+", label: "Recruiting Companies" },
                 { num: "15 LPA", label: "Highest Package" },
-                { num: "7+", label: "Programmes Offered" },
+                { num: "11+", label: "Programmes Offered" },
               ].map(s => (
                 <div key={s.label} className={styles.heroStat}>
                   <div className={styles.heroStatNum}>{s.num}</div>

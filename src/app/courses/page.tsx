@@ -6,7 +6,7 @@ import styles from "./page.module.css";
 
 export const metadata: Metadata = {
     title: "BBIT Courses & Programmes 2026",
-    description: "Explore all 9 undergraduate, postgraduate and diploma programmes at Budge Budge Institute of Technology (BBIT), Kolkata. Check eligibility and career prospects.",
+    description: "Explore all 11 undergraduate, postgraduate and diploma programmes at Budge Budge Institute of Technology (BBIT), Kolkata. Check eligibility and career prospects.",
 };
 
 const WA = "https://wa.me/919999999999?text=Hi%2C%20I%20want%20details%20about%20";
@@ -17,6 +17,8 @@ const programs = [
         desc: "Premier engineering degrees affiliated with MAKAUT, WB and approved by AICTE. Focus on industry-readiness and technical excellence.",
         courses: [
             { icon: "💻", title: "Computer Science & Engineering", code: "CSE", duration: "4 Years", seats: "120", description: "Top-tier placement in MNCs, focus on AI/ML, Cloud, and App Dev." },
+            { icon: "🤖", title: "CSE (Artificial Intelligence)", code: "CSE-AI", duration: "4 Years", seats: "60", description: "Specialized training in neural nets, predictive modeling, and AI ethics." },
+            { icon: "🔒", title: "CSE (Cyber Security)", code: "CSE-CS", duration: "4 Years", seats: "60", description: "Advanced focus on network security, ethical hacking, and data safety." },
             { icon: "📡", title: "Information Technology", code: "IT", duration: "4 Years", seats: "60", description: "Modern IT infrastructure, software engineering, and digital transformation focus." },
             { icon: "📻", title: "Electronics & Comm. Engg.", code: "ECE", duration: "4 Years", seats: "60", description: "Embedded systems, VLSI, and IoT. Bridge to both core and IT industries." },
             { icon: "⚡", title: "Electrical Engineering", code: "EE", duration: "4 Years", seats: "60", description: "Power systems, machines, and control engineering. Gate for PSUs." },
@@ -44,7 +46,7 @@ export default function CoursesPage() {
                         <span className="badge badge--gold">BBIT Programmes</span>
                         <h1 className={styles.title}>All Courses at <span className="heroHeadingGold">BBIT Kolkata</span></h1>
                         <p className={styles.subtitle}>
-                            Detailed information on all 9 programmes — eligibility, career scope, and seat availability.
+                            Detailed information on all 11 programmes — eligibility, career scope, and seat availability.
                             Get free guidance to choose your ideal engineering path.
                         </p>
                     </div>
