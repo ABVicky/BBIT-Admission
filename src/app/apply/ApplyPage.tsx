@@ -92,10 +92,6 @@ export default function ApplyPage() {
                                         <strong>📞 Helpline:</strong>
                                         <span>+91 70111 42521</span>
                                     </div>
-                                    <div className={styles.helpItem}>
-                                        <strong>📧 Email:</strong>
-                                        <span>guidance@bbitadmission.in</span>
-                                    </div>
                                 </div>
                             </div>
 
