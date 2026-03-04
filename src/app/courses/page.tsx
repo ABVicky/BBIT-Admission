@@ -80,7 +80,7 @@ export default function CoursesPage() {
                             <h3 className={styles.eligTitle}>General Eligibility for B.Tech</h3>
                             <p className={styles.eligText}>
                                 Candidates must have passed 10+2 with Physics, Mathematics, and one of Chemistry/Biology/Biotechnology/Technical Vocational subject.
-                                Min 45% marks (40% for SC/ST/OBC) in these subjects. Must have a valid rank in <strong>WBJEE</strong> or <strong>JEE Main</strong>.
+                                Min 45% marks (40% for SC/ST/OBC) in these subjects. While a rank in <strong>WBJEE</strong> or <strong>JEE Main</strong> is preferred, it is not mandatory. Direct admission is also available for eligible candidates.
                             </p>
                             <div className={styles.eligAction}>
                                 <a href={WA + "B.Tech%20Eligibility"} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
