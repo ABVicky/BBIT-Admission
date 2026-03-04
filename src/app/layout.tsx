@@ -101,8 +101,6 @@ export default function RootLayout({
             fbq('track', 'PageView');
           `}
         </Script>
-      </head>
-      <body>
         <noscript>
           <img
             height="1"
@@ -113,6 +111,8 @@ export default function RootLayout({
           />
         </noscript>
         {/* End Meta Pixel Code */}
+      </head>
+      <body>
         <Navbar />
         <main>{children}</main>
         <Footer />
