@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "./Footer.module.css";
 
-const WA = "https://wa.me/919999999999?text=Hi%2C%20I%20want%20guidance%20for%20BBIT%20admission.";
+const WA = "https://wa.me/917011142521?text=Hi%2C%20I%20want%20guidance%20for%20BBIT%20admission.";
 
 export default function Footer() {
     return (
@@ -76,7 +76,7 @@ export default function Footer() {
                         <div className={styles.linksCol}>
                             <h3 className={styles.colTitle}>Programmes at BBIT</h3>
                             <ul className={styles.linkList}>
-                                {["B.Tech CSE", "B.Tech IT", "B.Tech ECE", "B.Tech EE", "B.Tech ME", "B.Tech CE", "MBA", "M.Tech", "Polytechnic Diploma"].map(c => (
+                                {["B.Tech CSE", "CSE (AI)", "CSE (Cyber Security)", "B.Tech IT", "B.Tech ECE", "B.Tech EE", "B.Tech ME", "B.Tech CE", "MBA", "M.Tech", "Polytechnic Diploma"].map(c => (
                                     <li key={c}>
                                         <Link href="/courses" className={styles.footerLink}>
                                             <svg width="10" height="10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -99,11 +99,11 @@ export default function Footer() {
                                     </svg>
                                     <span>Nischintapur, Budge Budge, Kolkata – 700137, West Bengal</span>
                                 </div>
-                                <a href="tel:+919999999999" className={styles.contactItem}>
+                                <a href="tel:+917011142521" className={styles.contactItem}>
                                     <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                                     </svg>
-                                    <span>+91 99999 99999</span>
+                                    <span>+91 70111 42521</span>
                                 </a>
                                 <a href="mailto:guidance@bbitadmission.in" className={styles.contactItem}>
                                     <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

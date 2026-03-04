@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export default function WhatsAppFloat() {
-    const WA = "https://wa.me/919999999999?text=Hi%2C%20I%20want%20guidance%20for%20BBIT%20admission.";
+    const WA = "https://wa.me/917011142521?text=Hi%2C%20I%20want%20guidance%20for%20BBIT%20admission.";
     return (
         <a href={WA} target="_blank" rel="noopener noreferrer" className="wa-float" aria-label="Chat on WhatsApp">
             <svg viewBox="0 0 24 24" fill="currentColor">

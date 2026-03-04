@@ -63,7 +63,7 @@ export default function ScholarshipsPage() {
                             </div>
                         </div>
                         <div className={styles.cardAction}>
-                            <a href="https://wa.me/919999999999?text=Hi%2C%20I%20want%20to%20know%20about%20Student%20Credit%20Card%20at%20BBIT" className="btn btn-gold btn-lg">
+                            <a href="https://wa.me/917011142521?text=Hi%2C%20I%20want%20to%20know%20about%20Student%20Credit%20Card%20at%20BBIT" className="btn btn-gold btn-lg">
                                 Get Documentation Support
                             </a>
                         </div>

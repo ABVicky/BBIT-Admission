@@ -13,7 +13,7 @@ const navLinks = [
     { label: "Training", href: "/training" },
 ];
 
-const WA = "https://wa.me/919999999999?text=Hi%2C%20I%20want%20guidance%20for%20BBIT%20admission.";
+const WA = "https://wa.me/917011142521?text=Hi%2C%20I%20want%20guidance%20for%20BBIT%20admission.";
 
 const WaIcon = () => (
     <svg viewBox="0 0 24 24" fill="currentColor" width="17" height="17">
@@ -41,7 +41,7 @@ export default function Navbar() {
                         <span className={styles.topBarSep}>|</span>
                         <span>🎓 AICTE Approved · MAKAUT Affiliated</span>
                         <span className={styles.topBarSep}>|</span>
-                        <span>📞 Admission Helpline: <strong>+91 99999 99999</strong></span>
+                        <span>📞 Admission Helpline: <strong>+91 70111 42521</strong></span>
                     </div>
                 </div>
             </div>

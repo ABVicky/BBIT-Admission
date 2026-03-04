@@ -9,7 +9,7 @@ interface CTASectionProps {
     whatsappLabel?: string;
 }
 
-const WA = "https://wa.me/919999999999?text=Hi%2C%20I%20want%20guidance%20for%20BBIT%20admission.";
+const WA = "https://wa.me/917011142521?text=Hi%2C%20I%20want%20guidance%20for%20BBIT%20admission.";
 
 export default function CTASection({
     title = "Ready to Start Your BBIT Journey?",

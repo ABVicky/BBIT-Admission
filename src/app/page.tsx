@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     "Official admission guidance portal for Budge Budge Institute of Technology (BBIT), Kolkata. Get expert counselling on B.Tech courses, placements, scholarships, and campus life from a BBIT senior mentor.",
 };
 
-const WA = "https://wa.me/919999999999?text=Hi%2C%20I%20want%20guidance%20for%20BBIT%20admission.";
+const WA = "https://wa.me/917011142521?text=Hi%2C%20I%20want%20guidance%20for%20BBIT%20admission.";
 
 const courses = [
   { icon: "💻", title: "Computer Science & Engineering", code: "B.Tech CSE", duration: "4 Years", seats: "120", description: "Software development, AI/ML, data science, and modern computing. Highest demand branch with top placement records." },

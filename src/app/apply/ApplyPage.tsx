@@ -11,7 +11,7 @@ const faqs = [
 ];
 
 export default function ApplyPage() {
-    const WA_LINK = "https://wa.me/919999999999?text=Hi%2C%20I%20want%20to%20apply%20for%20admission%20guidance.";
+    const WA_LINK = "https://wa.me/917011142521?text=Hi%2C%20I%20want%20to%20apply%20for%20admission%20guidance.";
 
     return (
         <>
@@ -90,7 +90,7 @@ export default function ApplyPage() {
                                 <div className={styles.helpItems}>
                                     <div className={styles.helpItem}>
                                         <strong>📞 Helpline:</strong>
-                                        <span>+91 99999 99999</span>
+                                        <span>+91 70111 42521</span>
                                     </div>
                                     <div className={styles.helpItem}>
                                         <strong>📧 Email:</strong>

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     description: "Explore all 11 undergraduate, postgraduate and diploma programmes at Budge Budge Institute of Technology (BBIT), Kolkata. Check eligibility and career prospects.",
 };
 
-const WA = "https://wa.me/919999999999?text=Hi%2C%20I%20want%20details%20about%20";
+const WA = "https://wa.me/917011142521?text=Hi%2C%20I%20want%20details%20about%20";
 
 const programs = [
     {
